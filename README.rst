@@ -19,8 +19,6 @@ sphinx-debuginfo
 	  - |actions_linux| |actions_windows| |actions_macos|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
-	* - Anaconda
-	  - |conda-version| |conda-platform|
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 	* - QA
@@ -72,14 +70,6 @@ sphinx-debuginfo
 	:target: https://pypi.org/project/sphinx-debuginfo/
 	:alt: PyPI - Wheel
 
-.. |conda-version| image:: https://img.shields.io/conda/v/domdfcoding/sphinx-debuginfo?logo=anaconda
-	:target: https://anaconda.org/domdfcoding/sphinx-debuginfo
-	:alt: Conda - Package Version
-
-.. |conda-platform| image:: https://img.shields.io/conda/pn/domdfcoding/sphinx-debuginfo?label=conda%7Cplatform
-	:target: https://anaconda.org/domdfcoding/sphinx-debuginfo
-	:alt: Conda - Platform
-
 .. |license| image:: https://img.shields.io/github/license/sphinx-toolbox/sphinx-debuginfo
 	:target: https://github.com/sphinx-toolbox/sphinx-debuginfo/blob/master/LICENSE
 	:alt: License
@@ -113,27 +103,12 @@ Installation
 
 .. start installation
 
-``sphinx-debuginfo`` can be installed from PyPI or Anaconda.
+``sphinx-debuginfo`` can be installed from PyPI.
 
 To install with ``pip``:
 
 .. code-block:: bash
 
 	$ python -m pip install sphinx-debuginfo
-
-To install with ``conda``:
-
-	* First add the required channels
-
-	.. code-block:: bash
-
-		$ conda config --add channels http://conda.anaconda.org/conda-forge
-		$ conda config --add channels http://conda.anaconda.org/domdfcoding
-
-	* Then install
-
-	.. code-block:: bash
-
-		$ conda install sphinx-debuginfo
 
 .. end installation

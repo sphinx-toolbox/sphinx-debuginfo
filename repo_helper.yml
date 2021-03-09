@@ -13,6 +13,7 @@ short_desc: 'A Sphinx extension to include debugging information in the output.'
 
 enable_tests: false
 enable_docs: false
+enable_conda: false  # TODO
 
 conda_channels:
  - conda-forge
