@@ -11,25 +11,29 @@ version: '0.0.0'
 license: 'MIT'
 short_desc: 'A Sphinx extension to include debugging information in the output.'
 
-enable_tests: False
-enable_docs: False
+enable_tests: false
+enable_docs: false
 
 conda_channels:
-  - conda-forge
+ - conda-forge
 
 python_versions:
-  - 3.6
-  - 3.7
-  - 3.8
-  - 3.9
+ - 3.6
+ - 3.7
+ - 3.8
+ - 3.9
 
 keywords:
-  - debug
-  - sphinx
+ - debug
+ - sphinx
 
 classifiers:
  - 'Development Status :: 4 - Beta'
+ - 'Framework :: Sphinx :: Extension'
  - 'Intended Audience :: Developers'
+ - 'Topic :: Documentation'
+ - 'Topic :: Documentation :: Sphinx'
+ - 'Topic :: Software Development :: Documentation'
 
 extra_sphinx_extensions:
  - debuginfo

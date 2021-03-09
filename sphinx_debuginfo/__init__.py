@@ -26,8 +26,65 @@ A Sphinx extension to include debugging information in the output.
 #  OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
+# stdlib
+from typing import Any, Dict
+
+# 3rd party
+import tabulate
+from domdf_python_tools.compat import importlib_metadata
+from domdf_python_tools.paths import PathPlus
+from sphinx.application import Sphinx
+
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"
 __license__: str = "MIT License"
 __version__: str = "0.0.0"
 __email__: str = "dominic@davis-foster.co.uk"
+
+__all__ = ["setup", "write_debug_info"]
+
+
+def write_debug_info(app: Sphinx, exception: Exception = None) -> None:
+	"""
+	Write the file(s) containing debugging information.
+
+	:param app:
+	:param exception:
+	"""
+
+	if exception:  # pragma: no cover
+		return
+
+	if app.builder.format.lower() != "html":
+		return
+
+	packages = []
+
+	distribution: importlib_metadata.PathDistribution
+	for distribution in importlib_metadata.distributions():
+		packages.append((distribution.name, distribution.version))
+
+	packages.sort(key=lambda x: x[0].lower())
+
+	debug_dir = PathPlus(app.outdir) / "_debug"
+	debug_dir.maybe_make()
+
+	table = tabulate.tabulate(packages, headers=("Name", "Version"), tablefmt="html", colalign=("left", "right"))
+
+	(debug_dir / "index.html").write_lines([
+			"<h3>Packages and versions used to build these docs:<h3>",
+			'',
+			table,
+			])
+
+
+def setup(app: Sphinx) -> Dict[str, Any]:
+	"""
+	Setup :mod:`sphinx-debuginfo`.
+
+	:param app: The Sphinx app.
+	"""
+
+	app.connect("build-finished", write_debug_info)
+
+	return {"parallel_read_safe": True, "version": __version__}
