@@ -11,6 +11,8 @@ version: '0.1.0'
 license: 'MIT'
 short_desc: 'A Sphinx extension to include debugging information in the output.'
 
+mypy_version: 0.812
+use_whey: true
 enable_tests: false
 enable_docs: false
 enable_conda: false  # TODO
@@ -38,5 +40,3 @@ classifiers:
 
 extra_sphinx_extensions:
  - debuginfo
-
-mypy_version: 0.812
