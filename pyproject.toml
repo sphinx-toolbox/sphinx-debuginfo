@@ -22,3 +22,5 @@ Homepage = "https://github.com/sphinx-toolbox/sphinx-debuginfo"
 "Source Code" = "https://github.com/sphinx-toolbox/sphinx-debuginfo"
 
 [tool.importcheck]
+always = [ "sphinx_debuginfo",]
+config = {"show" = true}
