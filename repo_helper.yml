@@ -38,3 +38,5 @@ classifiers:
 
 extra_sphinx_extensions:
  - debuginfo
+
+mypy_version: 0.812
