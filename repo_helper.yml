@@ -1,0 +1,35 @@
+# Configuration for 'repo_helper' (https://github.com/domdfcoding/repo_helper)
+---
+modname: 'sphinx-debuginfo'
+copyright_years: 2021
+author: 'Dominic Davis-Foster'
+email: 'dominic@davis-foster.co.uk'
+username: 'sphinx-toolbox'
+assignee: 'domdfcoding'
+primary_conda_channel: 'domdfcoding'
+version: '0.0.0'
+license: 'MIT'
+short_desc: 'A Sphinx extension to include debugging information in the output.'
+
+enable_tests: False
+enable_docs: False
+
+conda_channels:
+  - conda-forge
+
+python_versions:
+  - 3.6
+  - 3.7
+  - 3.8
+  - 3.9
+
+keywords:
+  - debug
+  - sphinx
+
+classifiers:
+ - 'Development Status :: 4 - Beta'
+ - 'Intended Audience :: Developers'
+
+extra_sphinx_extensions:
+ - debuginfo
