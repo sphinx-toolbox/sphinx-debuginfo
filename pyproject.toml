@@ -23,4 +23,6 @@ Homepage = "https://github.com/sphinx-toolbox/sphinx-debuginfo"
 
 [tool.importcheck]
 always = [ "sphinx_debuginfo",]
-config = {"show" = true}
+
+[tool.importcheck.config]
+show = true
