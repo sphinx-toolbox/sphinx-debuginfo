@@ -62,7 +62,7 @@ def write_debug_info(app: Sphinx, exception: Exception = None) -> None:
 
 	distribution: importlib_metadata.PathDistribution
 	for distribution in importlib_metadata.distributions():
-		packages.append((distribution.metadata['Name'], distribution.version))
+		packages.append((distribution.metadata["Name"], distribution.version))
 
 	packages.sort(key=lambda x: x[0].lower())
 
