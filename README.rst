@@ -16,7 +16,7 @@ sphinx-debuginfo
 	:widths: 10 90
 
 	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos|
+	  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
@@ -49,6 +49,10 @@ sphinx-debuginfo
 .. |requires| image:: https://requires.io/github/sphinx-toolbox/sphinx-debuginfo/requirements.svg?branch=master
 	:target: https://requires.io/github/sphinx-toolbox/sphinx-debuginfo/requirements/?branch=master
 	:alt: Requirements Status
+
+.. |coveralls| image:: https://img.shields.io/coveralls/github/sphinx-toolbox/sphinx-debuginfo/master?logo=coveralls
+	:target: https://coveralls.io/github/sphinx-toolbox/sphinx-debuginfo?branch=master
+	:alt: Coverage
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/sphinx-toolbox/sphinx-debuginfo?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/sphinx-toolbox/sphinx-debuginfo

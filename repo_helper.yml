@@ -13,9 +13,9 @@ short_desc: 'A Sphinx extension to include debugging information in the output.'
 
 mypy_version: 0.812
 use_whey: true
-enable_tests: false
 enable_docs: false
 enable_conda: false  # TODO
+min_coverage: 100
 
 conda_channels:
  - conda-forge
@@ -37,6 +37,3 @@ classifiers:
  - 'Topic :: Documentation'
  - 'Topic :: Documentation :: Sphinx'
  - 'Topic :: Software Development :: Documentation'
-
-extra_sphinx_extensions:
- - debuginfo
