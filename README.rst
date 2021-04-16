@@ -102,6 +102,9 @@ sphinx-debuginfo
 
 .. end shields
 
+See an example of the output in the documentation for
+`sphinx-toolbox <https://sphinx-toolbox.readthedocs.io/en/latest/_debug/>`_.
+
 Installation
 --------------
 
