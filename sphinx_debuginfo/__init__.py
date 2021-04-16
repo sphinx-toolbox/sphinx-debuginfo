@@ -72,9 +72,22 @@ def write_debug_info(app: Sphinx, exception: Exception = None) -> None:
 	table = tabulate.tabulate(packages, headers=("Name", "Version"), tablefmt="html", colalign=("left", "right"))
 
 	(debug_dir / "index.html").write_lines([
-			"<h3>Packages and versions used to build these docs:<h3>",
+			"<!doctype html>",
 			'',
+			'<html lang="en">',
+			"<head>",
+			'  <meta charset="utf-8">',
+			"  <title>Sphinx Debuginfo</description>",
+			'  <meta name="description" content="Packages and versions used to build these docs">',
+			"</head>",
+			'',
+			"<body>",
+			"<h3>Packages and versions used to build these docs:<h3>",
 			table,
+			"</body>",
+			'',
+			"</html>",
+			'',
 			])
 
 
