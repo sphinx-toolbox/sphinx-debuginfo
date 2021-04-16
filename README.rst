@@ -81,7 +81,7 @@ sphinx-debuginfo
 .. |language| image:: https://img.shields.io/github/languages/top/sphinx-toolbox/sphinx-debuginfo
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/sphinx-toolbox/sphinx-debuginfo/v0.1.1
+.. |commits-since| image:: https://img.shields.io/github/commits-since/sphinx-toolbox/sphinx-debuginfo/v0.2.0
 	:target: https://github.com/sphinx-toolbox/sphinx-debuginfo/pulse
 	:alt: GitHub commits since tagged version
 
