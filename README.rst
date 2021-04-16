@@ -22,7 +22,7 @@ sphinx-debuginfo
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 	* - QA
-	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+	  - |codefactor| |actions_flake8| |actions_mypy|
 	* - Other
 	  - |license| |language| |requires|
 
@@ -95,10 +95,6 @@ sphinx-debuginfo
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/sphinx-debuginfo
 	:target: https://pypi.org/project/sphinx-debuginfo/
 	:alt: PyPI - Downloads
-
-.. |pre_commit_ci| image:: https://results.pre-commit.ci/badge/github/sphinx-toolbox/sphinx-debuginfo/master.svg
-	:target: https://results.pre-commit.ci/latest/github/sphinx-toolbox/sphinx-debuginfo/master
-	:alt: pre-commit.ci status
 
 .. end shields
 

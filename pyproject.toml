@@ -9,9 +9,11 @@ description = "A Sphinx extension to include debugging information in the output
 readme = "README.rst"
 keywords = [ "debug", "sphinx",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
+
 [[project.authors]]
 email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
+
 
 [project.license]
 file = "LICENSE"
@@ -39,6 +41,10 @@ python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
 package = "sphinx_debuginfo"
+
+[tool.mkrecipe]
+conda-channels = [ "conda-forge", "domdfcoding",]
+extras = "all"
 
 [tool.importcheck.config]
 show = true
