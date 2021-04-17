@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "sphinx-debuginfo"
-version = "0.2.0"
+version = "0.2.1"
 description = "A Sphinx extension to include debugging information in the output."
 readme = "README.rst"
 keywords = [ "debug", "sphinx", "sphinx-extension",]
