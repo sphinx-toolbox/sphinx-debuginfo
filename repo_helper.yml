@@ -29,6 +29,7 @@ python_versions:
 keywords:
  - debug
  - sphinx
+ - sphinx-extension
 
 classifiers:
  - 'Development Status :: 4 - Beta'

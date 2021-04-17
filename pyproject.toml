@@ -7,7 +7,7 @@ name = "sphinx-debuginfo"
 version = "0.2.0"
 description = "A Sphinx extension to include debugging information in the output."
 readme = "README.rst"
-keywords = [ "debug", "sphinx",]
+keywords = [ "debug", "sphinx", "sphinx-extension",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
 
 [[project.authors]]
