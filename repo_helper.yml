@@ -11,7 +11,7 @@ version: '0.2.1'
 license: 'MIT'
 short_desc: 'A Sphinx extension to include debugging information in the output.'
 
-mypy_version: 0.812
+mypy_version: "0.910"
 use_whey: true
 enable_docs: false
 enable_conda: false  # TODO
