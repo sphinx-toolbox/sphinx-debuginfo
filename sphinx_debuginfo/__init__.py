@@ -27,7 +27,7 @@ A Sphinx extension to include debugging information in the output.
 #
 
 # stdlib
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 # 3rd party
 import tabulate
@@ -44,7 +44,7 @@ __email__: str = "dominic@davis-foster.co.uk"
 __all__ = ["setup", "write_debug_info"]
 
 
-def write_debug_info(app: Sphinx, exception: Exception = None) -> None:
+def write_debug_info(app: Sphinx, exception: Optional[Exception] = None) -> None:
 	"""
 	Write the file(s) containing debugging information.
 
@@ -60,7 +60,7 @@ def write_debug_info(app: Sphinx, exception: Exception = None) -> None:
 
 	packages = []
 
-	distribution: importlib_metadata.PathDistribution
+	distribution: importlib_metadata.Distribution
 	for distribution in importlib_metadata.distributions():
 		packages.append((distribution.metadata["Name"], distribution.version))
 
