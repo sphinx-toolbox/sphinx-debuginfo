@@ -46,8 +46,8 @@ sphinx-debuginfo
 	:target: https://github.com/sphinx-toolbox/sphinx-debuginfo/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://requires.io/github/sphinx-toolbox/sphinx-debuginfo/requirements.svg?branch=master
-	:target: https://requires.io/github/sphinx-toolbox/sphinx-debuginfo/requirements/?branch=master
+.. |requires| image:: https://dependency-dash.herokuapp.com/github/sphinx-toolbox/sphinx-debuginfo/badge.svg
+	:target: https://dependency-dash.herokuapp.com/github/sphinx-toolbox/sphinx-debuginfo/
 	:alt: Requirements Status
 
 .. |coveralls| image:: https://img.shields.io/coveralls/github/sphinx-toolbox/sphinx-debuginfo/master?logo=coveralls
