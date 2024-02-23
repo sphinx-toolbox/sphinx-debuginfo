@@ -46,4 +46,4 @@ known_third_party = [
     "sphinx_toolbox",
     "tabulate",
 ]
-known_first_party = "sphinx_debuginfo"
+known_first_party = [ "sphinx_debuginfo",]
